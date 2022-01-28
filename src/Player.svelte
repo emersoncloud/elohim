@@ -3,16 +3,13 @@
     export let elo;
     export let selected;
     export let avatar;
-    console.log("avatar: ", avatar);
-    console.log("name: ", name);
-    console.log("elo: ", elo);
 </script>
 
 
     <div class = 'card-grid' on:click={()=> {selected = !selected}}
         id="{selected ? 'selected' : ''}">
         <div class='img-box'>
-            <img src={avatar}  alt={avatar}/>
+            <img src={avatar}  alt="avatar"/>
         </div>
         <div class='text-box'>
             <div>{name}</div>
