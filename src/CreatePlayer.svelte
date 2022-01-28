@@ -10,21 +10,20 @@
     let allAvatars = [];
 
     function generateAvatar() {
-        allAvatars = [
-            '/minimal/avocado.png','/minimal/bunnies.png','/minimal/cats.png','/minimal/hearts.png',
-            '/minimal/lighthouse.png', '/minimal/minimalistTriangles.png', '/minimal/moon.png',
-            '/minimal/mountain.png', '/minimal/saturn.png', '/minimal/streetsign.png', '/minimal/whale.png',
-            '/minimal/asstronaunt.png', '/minimal/bakery.png', '/minimal/banana.png', '/minimal/bongocat.png',
-            '/minimal/bubbletea.png', '/minimal/butterfly.png', '/minimal/campfire.png', '/minimal/city2.png',
-            '/minimal/desert.png', '/minimal/dessert.png', '/minimal/fox.png', '/minimal/gmoney.png',
-            '/minimal/hedgehog.png', '/minimal/lighthouse2.png', '/minimal/lighthouse3.png', '/minimal/pineapples.png',
-            '/minimal/pizza.png', '/minimal/river.png', '/minimal/river2.png', '/minimal/rocket.png', '/minimal/shrimp.png',
-            '/minimal/skyline.png', '/minimal/teahouse.png', '/minimal/watermelon.png', '/minimal/waves.png',
-            '/minimal/winterhouse.png', '/minimal/books.png','/minimal/bus.png','/minimal/chairChad.png',
-            '/minimal/chemistry.png', '/minimal/earth.png', '/minimal/ferris.png', '/minimal/map.png', '/minimal/runChad.png',
-            '/minimal/controller.png', '/minimal/factory.png', '/minimal/phonebeard.png', '/minimal/poolhouse.png',
-            '/minimal/stadium.png'
-        ]
+        allAvatars = ['/minimal/avocado.png','/minimal/bunnies.png','/minimal/cats.png','/minimal/hearts.png',
+                    '/minimal/lighthouse.png', '/minimal/minimalistTriangles.png', '/minimal/moon.png',
+                    '/minimal/mountain.png', '/minimal/saturn.png', '/minimal/streetsign.png', '/minimal/whale.png',
+                    '/minimal/asstronaunt.png', '/minimal/bakery.png', '/minimal/banana.png', '/minimal/bongocat.png',
+                    '/minimal/bubbletea.png', '/minimal/butterfly.png', '/minimal/campfire.png', '/minimal/city2.png',
+                    '/minimal/desert.png', '/minimal/dessert.png', '/minimal/fox.png', '/minimal/gmoney.png',
+                    '/minimal/hedgehog.png', '/minimal/lighthouse2.png', '/minimal/lighthouse3.png', '/minimal/pineapples.png',
+                    '/minimal/pizza.png', '/minimal/river.png', '/minimal/river2.png', '/minimal/rocket.png', '/minimal/shrimp.png',
+                    '/minimal/skyline.png', '/minimal/teahouse.png', '/minimal/watermelon.png', '/minimal/waves.png',
+                    '/minimal/winterhouse.png', '/minimal/books.png','/minimal/bus.png','/minimal/chairChad.png',
+                    '/minimal/chemistry.png', '/minimal/earth.png', '/minimal/ferris.png', '/minimal/map.png', '/minimal/runChad.png',
+                    '/minimal/controller.png', '/minimal/factory.png', '/minimal/phonebeard.png', '/minimal/poolhouse.png',
+                    '/minimal/stadium.png'
+                ]
         
         let randomAv = Math.floor(Math.random() * allAvatars.length);
         avatar = allAvatars[randomAv];
