@@ -5,7 +5,7 @@
     let savedMatchLabel = "fmmf";
 
     function loadMatch() {
-        fetch("http://localhost:8001/" + inputMatchLabel)
+        fetch("https://elobackend.emersoncloud.net:8001/" + inputMatchLabel)
             .then(response => response.json())
             .then(data => {
                 $playerList = data.players;
@@ -18,10 +18,13 @@
     }
 
     function saveMatch() {
+        console.log("saving match");
         let pList = $playerList;
         let t1 = $team1;
         let t2 = $team2;
-        fetch("http://localhost:8001/", {
+
+        console.log(pList, t1, t2);
+        fetch("https://elobackend.emersoncloud.net:8001/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
