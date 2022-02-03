@@ -2,10 +2,10 @@
     import {team1, team2, playerList} from './stores.ts';
 
     let inputMatchLabel = "";
-    let savedMatchLabel = "fmmf";
+    let savedMatchLabel = "";
 
     function loadMatch() {
-        fetch("https://elobackend.emersoncloud.net:8001/" + inputMatchLabel)
+        fetch("https://elobackend.emersoncloud.net/" + inputMatchLabel)
             .then(response => response.json())
             .then(data => {
                 $playerList = data.players;
@@ -18,13 +18,11 @@
     }
 
     function saveMatch() {
-        console.log("saving match");
         let pList = $playerList;
         let t1 = $team1;
         let t2 = $team2;
 
-        console.log(pList, t1, t2);
-        fetch("https://elobackend.emersoncloud.net:8001/", {
+        fetch("https://elobackend.emersoncloud.net/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
